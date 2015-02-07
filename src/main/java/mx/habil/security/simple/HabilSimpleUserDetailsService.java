@@ -22,7 +22,7 @@ public class HabilSimpleUserDetailsService implements UserDetailsService{
 		
 		UserDetails user = users.get(username);
 		if(user==null){
-			throw new UsernameNotFoundException("No se encontro el usuario en el repositorio.");
+			throw new UsernameNotFoundException("No se encontró el usuario en el repositorio.");
 		}
 		log.debug("user:"+user);
 		log.debug("end");
