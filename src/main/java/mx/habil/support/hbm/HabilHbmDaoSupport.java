@@ -47,7 +47,6 @@ public abstract class HabilHbmDaoSupport<T extends HabilDto, I extends Serializa
 	
 	public void delete(T dto) throws HabilDaoException{
 		log.debug("begin");
-		
 		getHibernateTemplate().delete(dto);
 		log.debug("end");
 	}
